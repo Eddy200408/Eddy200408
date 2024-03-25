@@ -17,11 +17,11 @@ public class Main {
             System.out.println("Coordenadas atuais do robô: (" + robo.getX() + ", " + robo.getY() + ")");
             System.out.println("Direção atual do robô: " + robo.getDirecao());
 
-            System.out.println("Girando o robô para a esquerda...");
+
             robo.turnLeft();
             System.out.println("Direção atual do robô: " + robo.getDirecao());
 
-            System.out.println("Movendo o robô...");
+            System.out.println("Movendo...");
             robo.move();
             System.out.println("Coordenadas atuais do robô: (" + robo.getX() + ", " + robo.getY() + ")");
         }
