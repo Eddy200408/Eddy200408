@@ -3,10 +3,26 @@ package Problema5;
 import java.io.IOException;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 
 public class problema5 {
     public static void main(String[] args) throws IOException {
+
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter("numeros.txt"));
+
+            writer.write("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16");
+
+            writer.close();
+            System.out.println("Numeros inseridos com sucesso");
+        }
+        catch (IOException e) {
+            System.out.println("Erro ao escrever no arquivo: " + e.getMessage());
+        }
+
         BufferedReader buffReader = new BufferedReader(new FileReader("numeros.txt"));
+
         int[][]Matriz= new int[4][4];
         int[]somaColuna=new int[4];
 
@@ -42,7 +58,7 @@ public class problema5 {
 
         for(a=0;a<4;a++){
             for(b=0;b<4;b++){
-                System.out.println(""+Matriz[a][b]);
+
                 soma1=soma + Matriz[a][b];
                 somaColuna[a]+=Matriz[a][b];
             }

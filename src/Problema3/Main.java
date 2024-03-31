@@ -24,11 +24,11 @@ public class Main {
     }
 
     public static char rodarTexto(char letra) {
-        char base = Character.isLowerCase(letra) ? 'a' : 'A'; // determina (minúscula ou maiúscula)
+        char base = Character.isLowerCase(letra) ? 'a' : 'A';
         int deslocamento = 13;
-        int indiceLetra = letra - base; // converte a letra para um índice (0 a 25)
+        int indiceLetra = letra - base;
         int novoIndiceLetra = (indiceLetra + deslocamento) % 26;
-        char novaLetra = (char) (base + novoIndiceLetra); // converte o índice de volta para uma letra
+        char novaLetra = (char) (base + novoIndiceLetra);
         return novaLetra;
     }
 

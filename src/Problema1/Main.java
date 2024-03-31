@@ -16,8 +16,6 @@ public class Main {
 
             System.out.println("Coordenadas atuais do robô: (" + robo.getX() + ", " + robo.getY() + ")");
             System.out.println("Direção atual do robô: " + robo.getDirecao());
-
-
             robo.turnLeft();
             System.out.println("Direção atual do robô: " + robo.getDirecao());
 

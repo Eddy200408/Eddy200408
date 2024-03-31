@@ -6,6 +6,7 @@ public class Sequencia {
     private int[] numeros;
 
     public Sequencia(int[] numeros) {
+
         this.numeros = numeros;
     }
 
